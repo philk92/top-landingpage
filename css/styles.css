@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-dark: #1f2937;
+  --color-bg-light: #e5e7eb;
+  --color-fg-blue: #3882f6;
+  --max-width: 1200px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: var(--color-bg-dark);
+  color: #fff;
+}
+/* navbar */
+
+.header-navbar {
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+}
+
+header a,
+a:hover,
+a:active,
+a:visited {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header a + a {
+  margin-left: 16px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bolder;
+}
+
+/* hero */
+
+.header-hero {
+  margin: 100px auto;
+  max-width: var(--max-width);
+}
+
+.header-hero-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-hero-box {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.header-hero-placeholder {
+  background-color: #bbbbbb70;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-hero-placeholder-text {
+}
+
+.header-hero-title {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.header-hero-text {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.header-hero-button {
+  border-radius: 5px;
+  background-color: var(--color-fg-blue);
+  border: none;
+  color: #fff;
+  padding: 8px 28px;
+  width: 120px;
+}
+
+/* information section */
+
+.information {
+  background-color: #fff;
+  color: #000;
+  max-width: var(--max-width);
+  margin: 30px auto;
+  text-align: center;
+}
+
+.information-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.information-container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.information-box-box {
+  height: 210px;
+  width: 210px;
+  border: 5px solid var(--color-fg-blue);
+  border-radius: 10px;
+}
+
+.information-box {
+  width: 210px;
+}
