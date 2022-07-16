@@ -91,11 +91,13 @@ header a + a {
   color: #f9faf8;
   font-size: 48px;
   font-weight: 900;
+  line-height: 1.1;
 }
 
 .header-hero-text {
   color: #e5e7eb;
   font-size: 18px;
+  padding: 8px 0 16px 0;
 }
 
 .header-hero-button {
@@ -113,7 +115,7 @@ header a + a {
   background-color: #fff;
   color: #000;
   max-width: var(--max-width);
-  margin: 30px auto;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -140,4 +142,91 @@ header a + a {
 
 .information-box {
   width: 210px;
+}
+
+/*  quote section  */
+
+.quotes {
+  background-color: var(--color-bg-light);
+}
+
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  max-width: var(--max-width);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.quotes-text {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 36px;
+  color: #1f2937;
+  max-width: 990px;
+}
+
+.quotes-thor {
+  font-weight: bold;
+  align-self: flex-end;
+  padding-top: 16px;
+  padding-right: 10%;
+}
+
+/*  action section  */
+
+.action {
+  background-color: #fff;
+  color: #000;
+}
+
+.action-container {
+  max-width: var(--max-width);
+  margin: 80px auto;
+  display: flex;
+  background-color: var(--color-fg-blue);
+  color: #fff;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 100px;
+  border-radius: 8px;
+}
+
+.action-box-left {
+  flex: 3 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.action-box-right {
+  flex: 1 1 auto;
+}
+.action-box-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.action-box-button {
+  font-size: 1.1em;
+  padding: 5px 40px;
+  font-weight: bold;
+  border: solid 2px #fff;
+  border-radius: 8px;
+  color: #fff;
+  background-color: var(--color-fg-blue);
+}
+
+/*  footer section  */
+
+.footer {
+  background-color: var(--color-bg-dark);
+  color: #fff;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
 }
