@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,700;1,400&display=swap");
 
 :root {
   --color-bg-dark: #1f2937;
@@ -15,7 +14,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Cabin", sans-serif;
+  font-family: sans-serif;
 }
 
 .header {
@@ -38,22 +37,22 @@ header ul {
 }
 
 header a,
-a:hover,
-a:active,
-a:visited {
+header a:hover,
+header a:active,
+header a:visited {
   color: #e5e7eb;
   text-decoration: none;
   font-size: 18px;
+  font-weight: bold;
 }
 
 header a + a {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 
 .navbar-logo {
   font-size: 24px;
   color: #f9faf8;
-  font-family: "PT-Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -96,7 +95,6 @@ header a + a {
   font-size: 48px;
   font-weight: 900;
   line-height: 1.1;
-  font-family: "PT-Sans", sans-serif;
 }
 
 .header-hero-text {
@@ -111,7 +109,8 @@ header a + a {
   border: none;
   color: #fff;
   padding: 8px 28px;
-  width: 120px;
+  font-size: 18px;
+  width: 150px;
 }
 
 /* information section */
@@ -216,12 +215,12 @@ header a + a {
   flex: 1 1 auto;
 }
 .action-box-title {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
 .action-box-button {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding: 5px 40px;
   font-weight: bold;
   border: solid 2px #fff;
